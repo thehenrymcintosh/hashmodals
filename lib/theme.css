@@ -1,0 +1,81 @@
+.hashmodal {
+  left: 50%;
+  top: 50%;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  z-index: 101;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.65);
+  transform: translate(-50%, -50%) translateY(10px); }
+  @media (min-width: 550px) {
+    .hashmodal {
+      padding: 30px 20px; } }
+  @media (min-width: 777px) {
+    .hashmodal {
+      max-width: 700px; } }
+  .hashmodal__background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    opacity: 0;
+    display: none;
+    pointer-events: none; }
+  .hashmodal__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    height: 16px;
+    width: 16px;
+    cursor: pointer; }
+    .hashmodal__close::before, .hashmodal__close::after {
+      position: absolute;
+      content: "";
+      height: 3px;
+      left: 50%;
+      top: 50%;
+      width: 16px;
+      background-color: #8e8e8e;
+      pointer-events: none;
+      transition: background-color 0.2s ease-in-out; }
+    .hashmodal__close:hover::before, .hashmodal__close:hover::after {
+      background-color: #757575; }
+    .hashmodal__close:before {
+      transform: translate(-50%, -50%) rotateZ(45deg); }
+    .hashmodal__close:after {
+      transform: translate(-50%, -50%) rotateZ(-45deg); }
+  .hashmodal__iframe-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background-color: #e3e3e3;
+    border-radius: 3px; }
+  .hashmodal__iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: none; }
+  .hashmodal__wrapper.block {
+    transition: transform 0.3s ease, opacity 0.3s ease; }
+  .hashmodal__wrapper.show .hashmodal {
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease-in-out; }
+    .hashmodal__wrapper.show .hashmodal__background {
+      transition: 0.3s ease-in-out; }
+  .hashmodal__wrapper.hide .hashmodal {
+    transition: 0.1s ease-in-out; }
+    .hashmodal__wrapper.hide .hashmodal__background {
+      transition: 0.1s ease-in-out; }
+
+/*# sourceMappingURL=theme.css.map */

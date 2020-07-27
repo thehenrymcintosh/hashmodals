@@ -1,0 +1,37 @@
+.hashmodal {
+  display: none;
+  position: fixed;
+  
+  transform: translate(-50%, -50%) translateY(10px);
+
+  &__wrapper {
+    &.block {
+      .hashmodal {
+        display: block;
+
+        &__background {
+          display: block;
+        }
+      }
+    }
+
+    &.show {
+      .hashmodal {
+        opacity: 1;
+
+        &__background {
+          pointer-events: all;
+          opacity: 1;
+        }
+      }
+    }
+
+    &.hide {
+      .hashmodal {
+        &__background {
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+.hashmodal {
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%) translateY(10px); }
+  .hashmodal__wrapper.block .hashmodal {
+    display: block; }
+    .hashmodal__wrapper.block .hashmodal__background {
+      display: block; }
+  .hashmodal__wrapper.show .hashmodal {
+    opacity: 1; }
+    .hashmodal__wrapper.show .hashmodal__background {
+      pointer-events: all;
+      opacity: 1; }
+
+/*# sourceMappingURL=index.css.map */
