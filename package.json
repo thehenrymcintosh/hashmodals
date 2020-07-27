@@ -1,0 +1,17 @@
+{
+  "name": "hashmodals",
+  "version": "1.0.0",
+  "description": "A tiny library for creating hash-based modals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "modals",
+    "hash",
+    "modal",
+    "popups"
+  ],
+  "author": "Henry McIntosh",
+  "license": "MIT"
+}
