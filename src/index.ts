@@ -18,8 +18,5 @@ function ready(callbackFunc: ()=>void) {
 }
 
 ready( () => {
-  modals.addModal("test",()=>{
-    return "<button>test</button>"
-  });
   modals.init();
 })
