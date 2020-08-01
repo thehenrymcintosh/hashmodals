@@ -17,6 +17,7 @@ function ready(callbackFunc: ()=>void) {
   }
 }
 
+window.modals = modals;
 ready( () => {
   modals.init();
 })
